@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #111;
+  color: #f8f8f8;
+}
+
+.app {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  background: linear-gradient(135deg, #1b1b1b, #222);
+  border: 1px solid #333;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.25);
+}
+
+.eyebrow {
+  color: #ffd21a;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+h1 {
+  font-size: 52px;
+  margin: 0;
+  color: #ffd21a;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.subtitle {
+  margin-bottom: 0;
+  color: #ccc;
+}
+
+button {
+  background: #ffd21a;
+  color: #111;
+  border: 0;
+  font-weight: 800;
+  padding: 12px 16px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(.95);
+}
+
+.tester,
+.cards {
+  margin-top: 22px;
+  background: #181818;
+  border: 1px solid #303030;
+  border-radius: 22px;
+  padding: 22px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  gap: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: 14px;
+  border: 1px solid #333;
+  background: #101010;
+  color: #fff;
+}
+
+pre {
+  white-space: pre-wrap;
+  background: #0d0d0d;
+  border: 1px solid #2d2d2d;
+  border-radius: 14px;
+  padding: 14px;
+  color: #ddd;
+  min-height: 42px;
+}
+
+.conversation-list {
+  display: grid;
+  gap: 14px;
+}
+
+.conversation {
+  border: 1px solid #333;
+  background: #101010;
+  border-radius: 18px;
+  padding: 16px;
+}
+
+.conversation.hot {
+  border-color: #ffd21a;
+}
+
+.conversation-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.phone {
+  font-weight: 800;
+  color: #ffd21a;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #292929;
+  color: #ddd;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge.alert {
+  background: #ffd21a;
+  color: #111;
+}
+
+.messages {
+  margin-top: 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.msg {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #1c1c1c;
+  color: #ddd;
+}
+
+.msg strong {
+  color: #fff;
+}
+
+.empty {
+  color: #aaa;
+}
+
+@media (max-width: 780px) {
+  .hero,
+  .conversation-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+}

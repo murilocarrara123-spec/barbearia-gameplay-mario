@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Manager V2 - Barbearia Gameplay</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Barbearia Gameplay</p>
+        <h1>Agent Manager <span style="font-size:14px;color:#fff;background:#ffd21a;color:#111;padding:6px 10px;border-radius:999px;">V2</span></h1>
+        <p class="subtitle">Painel com seletor de agentes</p>
+      </div>
+      <button id="refreshBtn">Atualizar</button>
+    </header>
+
+    <section class="tester">
+      <h2>Teste rápido sem WhatsApp real</h2>
+
+      <div class="grid" style="grid-template-columns: 1fr 1fr 2fr auto;">
+        <select id="agentSelect">
+          <option value="mario">Mario (Barbearia)</option>
+          <option value="maria">Maria (Novo agente)</option>
+        </select>
+
+        <input id="phoneInput" placeholder="Telefone. Ex: 5515999999999" value="5515991111111" />
+        <input id="messageInput" placeholder="Mensagem do cliente" value="cabelo e barba" />
+        <button id="sendTestBtn">Enviar teste</button>
+      </div>
+
+      <pre id="testResult"></pre>
+    </section>
+
+    <section class="cards">
+      <h2>Conversas recentes</h2>
+      <div id="conversationList" class="conversation-list"></div>
+    </section>
+  </main>
+
+  <script src="/dashboard.js"></script>
+</body>
+</html>

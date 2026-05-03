@@ -1,0 +1,17 @@
+{
+  "name": "barbearia-gameplay-mario",
+  "version": "1.0.0",
+  "description": "MVP do assistente virtual Mario para WhatsApp da Barbearia Gameplay",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "openai": "^4.57.0"
+  }
+}
